@@ -1,0 +1,166 @@
+body {
+  background-color: #121212; /* Hitam elegan */
+  background-image: radial-gradient(circle, #222 1px, transparent 1px),
+                    radial-gradient(circle, #222 1px, transparent 1px);
+  background-size: 20px 20px; /* Pola titik-titik */
+  background-position: 0 0, 10px 10px;
+  color: #fff;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.todo-container {
+  background-color: #1e1e1e; /* Abu gelap supaya nyaman */
+  border-radius: 18px;
+  padding: 20px;
+  margin: auto;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.6);
+  border: 3px solid #ff6b81; /* Pink terang */
+}
+
+h1 {
+  text-align: center;
+  color: #ffcc70; /* Kuning cerah */
+  text-shadow: 2px 2px #000;
+  font-size: 2.2rem;
+}
+
+form {
+  display: flex;
+  border-radius: 12px;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+form input[type="text"],
+form input[type="date"] {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #ffcc70;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #333;
+  font-size: 1rem;
+}
+
+form button {
+  background: #ff6b81;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 4px #d94d5e;
+}
+
+form button:hover {
+  transform: scale(1.08);
+  background-color: #ff7f93;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.btn-group button {
+  padding: 10px 16px;
+  border: none;
+  background: #4dd0e1; /* Cyan cerah */
+  color: #fff;
+  border-radius: 10px;
+  font-weight: bold;
+  box-shadow: 0 3px #2aa4b0;
+}
+
+.btn-group button:last-child {
+  background-color: #ffcc70; /* Kuning */
+  color: #333;
+  box-shadow: 0 3px #b89246;
+}
+
+.btn-group button:hover {
+  transform: scale(1.08);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #2c2c2c;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+  border: 1px solid #444;
+  font-weight: bold;
+}
+
+.no-task {
+  text-align: center;
+  color: #aaa;
+  font-style: italic;
+}
+
+#task-table {
+  max-height: 300px;
+  overflow-y: auto;
+  border: 2px solid #ff6b81;
+  border-radius: 12px;
+  margin-top: 10px;
+}
+
+.status-done {
+  color: #4caf50;
+  font-weight: bold;
+}
+
+.status-pending {
+  color: #ffa500;
+  font-weight: bold;
+}
+
+/* Tombol aksi dengan warna neon */
+.action-btn-done {
+  background-color: #4caf50;
+  color: white;
+  box-shadow: 0 3px #3c8e41;
+}
+
+.action-btn-edit {
+  background-color: #ffa500;
+  color: white;
+  box-shadow: 0 3px #cc8400;
+}
+
+.action-btn-delete {
+  background-color: #ff4c4c;
+  color: white;
+  box-shadow: 0 3px #b93535;
+}
+
+button {
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  padding: 6px 12px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+button:hover {
+  transform: translateY(-3px);
+}

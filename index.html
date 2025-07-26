@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <!-- CSS External -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="todo-container">
+      <!-- Tittle -->
+        <h1>ToDo List</h1>
+      <!-- Form input -->
+      <form>
+        <input type="text" id="taskInput" placeholder="Add your task" />
+        <input type="date" id="dueDate" />
+        <button type="button" onclick="addTask()">+</button>
+      </form>
+
+      <!-- Filter & Delete -->
+      <div class="btn-group">
+        <button type="button" onclick="filterTasks()">FILTER: Show Pending</button>
+        <button type="button" onclick="deleteAllTasks()">DELETE ALL</button>
+      </div>
+
+      <!-- Table Todo -->
+  <div id="task-table">
+    <table>
+      <thead>
+        <tr>
+          <th>TASK</th>
+          <th>DUE DATE</th>
+          <th>STATUS</th>
+          <th>ACTIONS</th>
+        </tr>
+      </thead>
+      <tbody id="taskList">
+        <tr><td colspan="4" class="no-task">No task found</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+    <!-- JavaScript External -->
+    <script src="js/script.js"></script>
+</body>
+</html>
